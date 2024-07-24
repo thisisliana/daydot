@@ -4,7 +4,6 @@ import WhatIOffer from '@DRXPath/pages/WhatIOffer'
 import AboutMe from '@DRXPath/pages/AboutMe'
 import Contact from '@DRXPath/pages/Contact'
 import HealthProfessionals from './pages/HealthProfessionals'
-import { HashRouter } from 'react-router-dom'
 
 export const ROUTE_ABOUT_ME = '/aboutme'
 
@@ -18,15 +17,13 @@ export const ROUTE_HEALTH_PROFS = '/healthprofessionals'
 
 const App = () => {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path="*" element={<AboutMe />} />
-        <Route path={ROUTE_ABOUT_ME} element={<AboutMe />} />
-        <Route path={ROUTE_WHAT_I_OFFER} element={<WhatIOffer />} />
-        <Route path={ROUTE_CONTACT} element={<Contact />} />
-        <Route path={ROUTE_HEALTH_PROFS} element={<HealthProfessionals />} />
-      </Routes>
-    </HashRouter>
+    <Routes>
+      <Route path="*" element={<AboutMe />} />
+      <Route path={ROUTE_ABOUT_ME} element={<AboutMe />} />
+      <Route path={ROUTE_WHAT_I_OFFER} element={<WhatIOffer />} />
+      <Route path={ROUTE_CONTACT} element={<Contact />} />
+      <Route path={ROUTE_HEALTH_PROFS} element={<HealthProfessionals />} />
+    </Routes>
   )
 }
 
