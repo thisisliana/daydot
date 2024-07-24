@@ -1,0 +1,14 @@
+# Directories
+node_modules
+dist
+build
+docs
+fonts
+.devcontainer
+**/dist/build
+**/tsc-dist
+
+#Files
+*.json
+*.html
+*.png
