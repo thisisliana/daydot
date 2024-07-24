@@ -14,7 +14,7 @@ const ContactBlock = () => {
       <BodyText text={'You can reach me at: +61 (0) 422 942 625'} />
 
       <Typography fontWeight={'bold'} sx={{ mt: 2 }}>Location</Typography>
-      <BodyText text={'6 broadway street, Wooloongabba, Brisbane, QLD'} />
+      <BodyText text={'6 broadway street, Woolloongabba, Brisbane, QLD'} />
       <BodyText text={'(Free parking onsite)'} />
       <LocationMap height={400} width={400} />
     </>
