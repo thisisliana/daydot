@@ -5,7 +5,20 @@ import { Button, List, ListItem, ListItemIcon, ListItemText, Typography } from '
 import React from 'react'
 import SpaIcon from '@mui/icons-material/Spa'
 import ChangeBgImage from '@DRXPath/hooks/ChangeBgImage'
-import BgImage from '@DRXPath/assets/Images/pinkDots.jpg'
+import BgImageLarge from '@DRXPath/assets/Images/pinkDots_large.png'
+import BgImageMedium from '@DRXPath/assets/Images/pinkDots_medium.png'
+import BgImageSmall from '@DRXPath/assets/Images/pinkDots_small.png'
+import { VIEWPORT_LARGE, VIEWPORT_MEDIUM } from './AboutMe'
+
+const width = (window.innerWidth > 0) ? window.innerWidth : screen.width
+
+let BgImage = BgImageLarge
+
+if (width < VIEWPORT_MEDIUM) {
+  BgImage = BgImageSmall
+} else if (width < VIEWPORT_LARGE) {
+  BgImage = BgImageMedium
+}
 
 const topicsIncludeText = [
   'how to break bad news',

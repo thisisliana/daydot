@@ -3,7 +3,7 @@ import React from 'react'
 import AppBar from '@mui/material/AppBar'
 import MenuIcon from '@mui/icons-material/Menu'
 import { Link, useNavigate } from 'react-router-dom'
-import { ROUTE_ABOUT_ME, ROUTE_CONTACT, ROUTE_WHAT_I_OFFER } from '@DRXPath/App'
+import { ROUTE_ABOUT_ME, ROUTE_CONTACT, ROUTE_HEALTH_PROFS, ROUTE_WHAT_I_OFFER } from '@DRXPath/App'
 import logoImage from '@DRXPath/assets/Images/logoPlain_v1.png'
 import facebookImage from '@DRXPath/assets/Images/icons8-facebook-50.svg'
 import instagramImage from '@DRXPath/assets/Images/icons8-instagram-50.svg'
@@ -46,6 +46,9 @@ const PageHeader = () => {
     },
     {
       displayText: 'Contact', url: ROUTE_CONTACT
+    },
+    {
+      displayText: 'Health Professionals', url: ROUTE_HEALTH_PROFS
     }
   ]
 

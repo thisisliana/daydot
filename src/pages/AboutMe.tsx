@@ -1,12 +1,28 @@
-import { Box, Button, Stack, Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import React from 'react'
 import BodyText from '@DRXPath/components/BodyText'
 import SubHeadingText from '@DRXPath/components/SubHeadingText'
 import { ROUTE_CONTACT } from '@DRXPath/App'
 import InfoPageWrapper from '@DRXPath/components/InfoPageWrapper'
-import BgImage from '@DRXPath/assets/Images/LQPreg.jpg'
+import BgImageLarge from '@DRXPath/assets/Images/LQPreg_large.png'
+import BgImageMedium from '@DRXPath/assets/Images/LQPreg_medium.png'
+import BgImageSmall from '@DRXPath/assets/Images/LQPreg_small.png'
 import ChangeBgImage from '@DRXPath/hooks/ChangeBgImage'
 import LianaImage from '@DRXPath/assets/Images/liana.jpeg'
+
+export const VIEWPORT_LARGE = 1200
+
+export const VIEWPORT_MEDIUM = 800
+
+const width = (window.innerWidth > 0) ? window.innerWidth : screen.width
+
+let BgImage = BgImageLarge
+
+if (width < VIEWPORT_MEDIUM) {
+  BgImage = BgImageSmall
+} else if (width < VIEWPORT_LARGE) {
+  BgImage = BgImageMedium
+}
 
 const AboutMe = () => {
   return (

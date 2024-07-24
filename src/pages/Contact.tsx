@@ -2,11 +2,24 @@ import { ROUTE_HEALTH_PROFS } from '@DRXPath/App'
 import ContactBlock from '@DRXPath/components/ContactBlock'
 import InfoPageWrapper from '@DRXPath/components/InfoPageWrapper'
 import { Button, Stack } from '@mui/material'
-import BgImage from '@DRXPath/assets/Images/pinkFlowers.jpg'
+import BgImageLarge from '@DRXPath/assets/Images/pinkFlowers_large.png'
+import BgImageMedium from '@DRXPath/assets/Images/pinkFlowers_medium.png'
+import BgImageSmall from '@DRXPath/assets/Images/pinkFlowers_small.png'
 import React from 'react'
 import ChangeBgImage from '@DRXPath/hooks/ChangeBgImage'
 import BodyText from '@DRXPath/components/BodyText'
 import SubHeadingText from '@DRXPath/components/SubHeadingText'
+import { VIEWPORT_LARGE, VIEWPORT_MEDIUM } from './AboutMe'
+
+const width = (window.innerWidth > 0) ? window.innerWidth : screen.width
+
+let BgImage = BgImageLarge
+
+if (width < VIEWPORT_MEDIUM) {
+  BgImage = BgImageSmall
+} else if (width < VIEWPORT_LARGE) {
+  BgImage = BgImageMedium
+}
 
 const Contact = () => {
   return (
