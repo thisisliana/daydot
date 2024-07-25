@@ -101,7 +101,7 @@ const HealthProfessionals = () => {
         }
       </List>
 
-      <Button variant="outlined" href={ROUTE_CONTACT} sx={{ marginTop: 2 }}>Get in touch</Button>
+      <Button variant="outlined" href={`#${ROUTE_CONTACT}`} sx={{ marginTop: 2 }}>Get in touch</Button>
     </InfoPageWrapper>
   )
 }

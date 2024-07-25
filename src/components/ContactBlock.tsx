@@ -8,7 +8,7 @@ const ContactBlock = () => {
   return (
     <>
       <Typography fontWeight={'bold'} sx={{ mt: 2 }}>Email</Typography>
-      <Email email="hello@daydotmidwifery "><Typography>hello@daydotmidwifery</Typography></Email>
+      <Email email="hello@daydotmidwifery.com.au "><Typography>hello@daydotmidwifery.com.au</Typography></Email>
 
       <Typography fontWeight={'bold'} sx={{ mt: 2 }}>Phone</Typography>
       <BodyText text={'You can reach me at: +61 (0) 422 942 625'} />

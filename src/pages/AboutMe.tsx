@@ -45,7 +45,7 @@ const AboutMe = () => {
         <BodyText text={'Grief has taught me if you want to survive- you need to face it, embrace it, and to feel it.'} />
         <BodyText text={'Along with supporting the bereaved, another passion I have found myself working in is the area of birth trauma debriefing. Recently I understood further training to support mothers, fathers and birth workers in debriefing birth. This training has equipped me to provide support to families who feel their childbirth experience was traumatic or feel that their birth still feels difficult or uncomfortable to sit with. Within a birth debrief you are provided opportunity to explore your birth and are assisted to process what these experiences mean for you. Birth debriefing is available for women who have birthed a baby of any gestation and with any outcome.'} />
         <BodyText text={'I welcome you as you are, from your day dot.'} />
-        <Button variant="outlined" href={ROUTE_CONTACT}>Get in touch</Button>
+        <Button variant="outlined" href={`#${ROUTE_CONTACT}`}>Get in touch</Button>
       </InfoPageWrapper>
     </>
   )

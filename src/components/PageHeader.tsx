@@ -2,7 +2,8 @@ import { Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Tooltip, T
 import React from 'react'
 import AppBar from '@mui/material/AppBar'
 import MenuIcon from '@mui/icons-material/Menu'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { Link } from '@mui/material'
 import { ROUTE_ABOUT_ME, ROUTE_CONTACT, ROUTE_HEALTH_PROFS, ROUTE_WHAT_I_OFFER } from '@DRXPath/App'
 import logoImage from '@DRXPath/assets/Images/logoPlain_v1.png'
 import facebookImage from '@DRXPath/assets/Images/icons8-facebook-50.svg'
@@ -24,7 +25,7 @@ const PageHeader = () => {
 
   const Logo = () => {
     return (
-      <Link to={ROUTE_ABOUT_ME}>
+      <Link href={`#${ROUTE_ABOUT_ME}`}>
         <img src={logoImage} height="50px" />
       </Link>
     )
@@ -121,12 +122,12 @@ const PageHeader = () => {
           </Box>
           <Box display="flex" flexGrow={0} gap={0.5}>
             <Tooltip title="Go to Day Dot on Facebook" placement="bottom" arrow={true}>
-              <Link to="https://www.facebook.com/profile.php?id=61559121684280" target="_blank">
+              <Link href="https://www.facebook.com/profile.php?id=61559121684280" target="_blank">
                 <img src={facebookImage}/>
               </Link>
             </Tooltip>
             <Tooltip title="Go to Day Dot on Instagram">
-              <Link to="https://www.instagram.com/daydot_midwifery" target="_blank">
+              <Link href="https://www.instagram.com/daydot_midwifery" target="_blank">
                 <img src={instagramImage}/>
               </Link>
             </Tooltip>

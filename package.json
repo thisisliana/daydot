@@ -2,7 +2,7 @@
   "name": "daydotmidwifery",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://thisisliana.github.io/daydot/#",
+  "homepage": "http://www.daydotmidwifery.com.au/#",
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "NODE_ENV=production webpack",
