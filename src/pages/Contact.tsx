@@ -30,7 +30,7 @@ const Contact = () => {
         <ContactBlock />
 
         <Stack spacing={2} paddingTop={2}>
-          <BodyText text="Woolloongabba, Brisbane is situated on Turrbal country. I acknowledge the Turrbal people as first to birth here and the original birth workers of the area. I honor their ongoing relationship with the land and heritage and I express my gratitude to past, present, and future elders and strive for a promising future for Indigenous communities." />
+          <BodyText text="Brisbane is situated on Turrbal/Yuggera country. I acknowledge the Turrbal/Yuggera people as first to birth here and the original birth workers of the area. I honor their ongoing relationship with the land and heritage and I express my gratitude to past, present, and future elders and strive for a promising future for Indigenous communities." />
           <Button variant="outlined" href={`#${ROUTE_HEALTH_PROFS}`} sx={{ mt: 2, maxWidth: '300px' }}>For Health Professionals</Button>
         </Stack>
 
