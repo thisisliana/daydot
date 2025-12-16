@@ -14,8 +14,8 @@ const ContactBlock = () => {
       <BodyText text={'You can reach me at: +61 (0) 422 942 625'} />
 
       <Typography fontWeight={'bold'} sx={{ mt: 2 }}>Location</Typography>
-      <BodyText text={'16 Barrack Rd, Cannon Hill, Brisbane, QLD'} />
-      <BodyText text={'(Enter through the door on the left- no need to ring the bell)'} />
+      <BodyText text={'BRISBANE'} />
+      <BodyText text={'Please contact Liana directly for location details on 0422942625 or hello@daydotmidwifery.com.au'} />
       <LocationMap height={400} width={400} />
     </>
   )
