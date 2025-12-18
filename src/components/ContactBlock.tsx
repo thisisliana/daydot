@@ -15,7 +15,7 @@ const ContactBlock = () => {
 
       <Typography fontWeight={'bold'} sx={{ mt: 2 }}>Location</Typography>
       <BodyText text={'BRISBANE'} />
-      <BodyText text={'Please contact Liana directly for location details on 0422942625 or hello@daydotmidwifery.com.au'} />
+      <BodyText text={'Please contact Liana directly for location details at the phone or email above.'} />
     </>
   )
 }
